@@ -114,8 +114,6 @@ To paraphrase, it's basically "maybe you have too many components, try merging t
 
 Yes, [there is such post](https://chrisdone.com/posts/halogen-is-better-than-react/), just wanted to mention. The title is a clickbait though, because this isn't what the post is about. The post is comparing "PureScript + Halogen vs TypeScript + React". IOW, it compares different programming languages rather than just frameworks.
 
-So… it's unrelated to the present comparison.
-
 # Conclusion
 
 Halogen adds little to no type-safety over React Hooks *(the `ref` thing might be the only one but even that is disputable)*, error-prone in places, complicated to write and maintain. Lots of problems which just don't exist in React Hooks.
