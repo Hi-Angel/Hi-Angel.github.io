@@ -122,6 +122,6 @@ Halogen adds little to no type-safety over React Hooks *(the `ref` thing might b
 
 # P.S.
 
-This may be one of my last PureScript posts. While my experiment with using PureScript did succeed, but at some point management decided they want cross-team commands, and the company already has other projects in TypeScript, so project is being rewritten. The decision didn't involve any kind of technical discussion, it was sole top-management decision that they brought down.
+This may be one of my last PureScript posts. While my experiment with using PureScript did succeed, but at some point management decided they want cross-team commands, and the company has no PureScript projects. The decision didn’t involve any kind of technical discussion, it was sole top-management decision that they brought down.
 
 During this work I contributed a lot, both in terms of basic questions and sometimes answers, as well as actual code-contributions to core PureScript projects. In my spare time I also took maintainership over Emacs purescript-mode and noticeably improved it. Overall, I feel I significantly improved PureScript ecosystem, and I hope this post will significantly simplify the life for new people too.
