@@ -1,4 +1,4 @@
-**this is a backup of [my post on PureScript discourse](https://discourse.purescript.org/t/psa-stop-recommending-halogen-we-have-react/4920)**
+**(this is a backup of [my post on PureScript discourse](https://discourse.purescript.org/t/psa-stop-recommending-halogen-we-have-react/4920))**
 
 I've been meaning to write this post for ½ an year, because I think the current situation is actively hurting community, mostly by turning away new users/contributors.
 
