@@ -48,7 +48,7 @@ html2 = R.div_ [ R.button_ [ R.text "Submit" ]]
 
 ## Component effects
 
-A component *(part of a DOM tree with side-effects handling)* is where the difference shows up. In Halogen you define some `data Action = Branch1 | Branch2 | …` and then Halogen says: "every action *(like `onClick`, `onKeyDown`, etc)* will return a `BranchX` of `Action`, to be processed later in `handleAction` function". If you write a web app, however you try to break things to different components *(which is a separate issue I'll go into later)*, you will inevitably have single `handleAction` handling completely unrelated events, which becomes just messy to read.
+A component *(part of a DOM tree with side-effects handling)* is where the difference shows up. In Halogen you define some `data Action = Branch1 | Branch2 | …` and then Halogen says: "every event *(like `onClick`, `onKeyDown`, etc)* will return a `BranchX` of `Action`, to be processed later in `handleAction` function". If you write a web app, however you try to break things to different components *(which is a separate issue I'll go into later)*, you will inevitably have single `handleAction` handling completely unrelated events, which becomes just messy to read.
 
 Compared to React you'll also have a bunch of `data Action` values, which are completely unrelated to each other, and may easily become orphaned with time without you noticing. And every time you want to see the actual handler you have to go through this indirection point.
 
