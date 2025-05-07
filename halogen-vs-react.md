@@ -104,7 +104,7 @@ In Halogen you have to render a meaningless and excess "initial state", to be im
 
 The complexity I just mentioned grows so much that when at some point you realize "my component could actually be broken up to two to reuse part of the code elsewhere", it may be easier and faster to just write new component from scratch than to try to decouple it from these humongous abstractions.
 
-And this is not just my opinion, [look at this suggestion by one of Halogene's maintainers](https://discourse.purescript.org/t/best-way-to-handle-complex-state-in-halogen/1306/5?u=hi-angel) under a post where a user complains about complexity:
+And this isn't just me, [look at this suggestion by one of Halogene's maintainers](https://discourse.purescript.org/t/best-way-to-handle-complex-state-in-halogen/1306/5?u=hi-angel) under a post where a user complains about complexity:
 
 > It sounds like maybe you’ve broken things into components that don’t need to be? The sub-components that want to pass state back up to/receive state from their parent - do they have any additional state that would be awkward to manage in the parent? If not, I’d start collapsing back into the main component.
 
