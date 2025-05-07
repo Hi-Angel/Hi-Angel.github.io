@@ -94,7 +94,7 @@ The amount of complexity compared to React is **insane**, I can't emphasize it e
 
 ## Meaningless initial states
 
-This one is uniquely a Halogen problem. Suppose a component needs to render something as result of an effect. Imagine something trivial, like showing a random number in a label.
+This one is uniquely a Halogen problem. Suppose a component needs to render something as result of an effect. Imagine something trivial, like showing the current date.
 
 In React there's a component creation phase, which happens before everything else and it allows you to execute such effect. So when component gets rendered, it has the correct initial state.
 
