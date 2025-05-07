@@ -96,7 +96,7 @@ The amount of complexity compared to React is **insane**, I can't emphasize it e
 
 This one is uniquely a Halogen problem. Suppose a component needs to render something as result of an effect. Imagine something trivial, like showing a random number in a label.
 
-In React there's a component creation phase, which happens before a component is even created and it allows you to execute such effect. So when component gets rendered, it gets the correct initial state.
+In React there's a component creation phase, which happens before everything else and it allows you to execute such effect. So when component gets rendered, it has the correct initial state.
 
 In Halogen you have to render a meaningless and excess "initial state", to be immediately overwritten once `handleAction` gets to run its `Initialize` phase. And often the "initial values" has no obvious initial state. Like, if you render a name, it doesn't make logical sense for it to be "empty", but you have to make it empty because of this peculiarity. And you have to edit this meaningless function every time you somehow change the component state type.
 
