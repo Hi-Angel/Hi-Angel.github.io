@@ -110,7 +110,7 @@ And this is not just my opinion, [look at this suggestion by one of Halogene's m
 
 To paraphrase, it's basically "maybe you have too many components, try merging them". It's a situation which… well, maybe not "impossible", but at least one that's hard to get into with React, at least to the point where it becomes an issue. But even if it does become one, it goes without saying merging them back would be trivial in React but may easily be an ordeal in Halogen.
 
-# Wasn't there a post "Halogen is better than React at everything"
+# Wasn't there a post "Halogen is better than React at everything"?
 
 Yes, [there is such post](https://chrisdone.com/posts/halogen-is-better-than-react/), just wanted to mention. The title is a clickbait though, because this isn't what the post is about. The post is comparing "PureScript + Halogen vs TypeScript + React". IOW, it compares different programming languages rather than just frameworks.
 
