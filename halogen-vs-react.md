@@ -110,6 +110,12 @@ And this isn't just me, [look at this suggestion by one of Halogene's maintainer
 
 To paraphrase, it's basically "maybe you have too many components, try merging them". It's a situation which… well, maybe not "impossible", but at least one that's hard to get into with React, at least to the point where it becomes an issue. But even if it does become one, it goes without saying merging them back would be trivial in React but may easily be an ordeal in Halogen.
 
+# Runtime checks
+
+React by default does some sanity checks during DOM construction. Like, imagine you're constructing a table, and you forgot passing `tr` and passed `td` directly, or vice versa. In my experience Firefox renders it just fine, so there's a hidden bug for you. React will notice this and print a runtime error to browser console.
+
+This caught some bugs for me that have been present even in Halogen code. To my knowledge, Halogen doesn't do such checks.
+
 # Wasn't there a post "Halogen is better than React at everything"?
 
 Yes, [there is such post](https://chrisdone.com/posts/halogen-is-better-than-react/), just wanted to mention. The title is a clickbait though, because this isn't what the post is about. The post is comparing "PureScript + Halogen vs TypeScript + React". IOW, it compares different programming languages rather than just frameworks.
@@ -120,6 +126,6 @@ Halogen adds little to no type-safety over React Hooks *(the `ref` thing might b
 
 # P.S.
 
-This may be one of my last PureScript posts. While my experiment with using PureScript did succeed, but at some point management decided they want cross-team commands, and the company has no PureScript projects. The decision didn’t involve any kind of technical discussion, it was sole top-management decision that they brought down.
+This may be one of my last PureScript posts. While my experiment with using PureScript did succeed, but at some point management decided they want cross-team commands, and the company has no PureScript projects. The decision involved no technical discussions, it was solely top-management decision.
 
 During this work I contributed a lot, both in terms of basic questions and sometimes answers, as well as code-contributions to various core PureScript projects. In my spare time I also took maintainership/improved Emacs purescript-mode. Overall, I feel to have done good ecosystem improvements, and I hope this post will significantly simplify the life for newcomers too.
