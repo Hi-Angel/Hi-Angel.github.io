@@ -60,7 +60,7 @@ This whole `data Action` indirection creates no benefits compared to a callback;
 
 "Ref"s are basically a way to refer to a DOM element without assigning some global `id`. So like, without "ref"s, you'd have to explicitly assign an `id` to an element and then call `getElementById()`.
 
-In React `ref` acts like a pipe: you create it in the component body, and then you pass it to the element and to the action. Handy. One could argue there is effect *(as the ref content gets changed)*, but it's hidden.
+In React `ref` acts like a pipe: you create it inside component, and you pass it to the element and to the action. Handy. One could argue there is effect *(as the ref content gets changed)*, but it's hidden.
 
 In Halogen it isn't a pipe. Instead `RefLabel` is a string *(it's literally `newtype` for a `String`)*, and it is your job to make sure whatever name you come up with wouldn't clash with other existing `RefLabel`s. So, well, it isn't much different from `getElementById()` you'd wanted to avoid.
 
