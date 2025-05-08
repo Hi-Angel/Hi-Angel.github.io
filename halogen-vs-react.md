@@ -58,7 +58,7 @@ This whole `data Action` indirection creates no benefits compared to a callback;
 
 ## Refs
 
-"Ref"s are basically a way to refer to a DOM element without explicit effects. So like, wasn't it for "ref"s, you'd have to explicitly assign an `id` to an element and then effectfully `getElementById()`.
+"Ref"s are basically a way to refer to a DOM element without assigning some global `id`. So like, without "ref"s, you'd have to explicitly assign an `id` to an element and then call `getElementById()`.
 
 In React `ref` acts like a pipe: you create it in the component body, and then you pass it to the element and to the action. Handy. One could argue there is effect *(as the ref content gets changed)*, but it's hidden.
 
